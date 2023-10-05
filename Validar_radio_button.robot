@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation       Demo Radio Buttons
 Library             SeleniumLibrary
-Library    XML
 
 *** Variables ***
 ${url}=    https://demoqa.com/radio-button
