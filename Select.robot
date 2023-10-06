@@ -23,3 +23,7 @@ Demo uno
     #value
     Select From List By Value    sorter    price
     Sleep    ${t}
+
+    #index
+    Select From List By Index    sorter    0
+    Sleep    ${t}
