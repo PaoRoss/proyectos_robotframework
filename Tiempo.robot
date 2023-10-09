@@ -26,4 +26,3 @@ Demo uno
     Select From List By Label    sorter    Product Name 
     Select From List By Value    sorter    price
     Select From List By Index    sorter    0
-
