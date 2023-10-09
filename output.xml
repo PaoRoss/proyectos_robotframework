@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20231009 12:29:09.007" rpa="false" schemaversion="3">
+<suite id="s1" name="Select" source="c:\Users\M1PGONZAL\documents\Robot_Practices\UdemyRobotCourses\proyectos_robotframework\Select.robot">
+<test id="s1-t1" name="Demo uno" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231009 12:29:09.180" level="INFO">Opening browser 'gc' to base url 'https://magento.softwaretestingboard.com/men/tops-men/hoodies-and-sweatshirts-men.html'.</msg>
+<msg timestamp="20231009 12:29:12.884" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231009 12:29:12.885" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 117.0.5938.132 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00CCA813+48355]
+	(No symbol) [0x00C5C4B1]
+	(No symbol) [0x00B65358]
+	(No symbol) [0x00B861AC]
+	(No symbol) [0x00B81EF3]
+	(No symbol) [0x00B80579]
+	(No symbol) [0x00BB0C55]
+	(No symbol) [0x00BB093C]
+	(No symbol) [0x00BAA536]
+	(No symbol) [0x00B882DC]
+	(No symbol) [0x00B893DD]
+	GetHandleVerifier [0x00F2AABD+2539405]
+	GetHandleVerifier [0x00F6A78F+2800735]
+	GetHandleVerifier [0x00F6456C+2775612]
+	GetHandleVerifier [0x00D551E0+616112]
+	(No symbol) [0x00C65F8C]
+	(No symbol) [0x00C62328]
+	(No symbol) [0x00C6240B]
+	(No symbol) [0x00C54FF7]
+	BaseThreadInitThunk [0x7557FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77077B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77077AEE+238]
+</msg>
+<status status="FAIL" starttime="20231009 12:29:09.180" endtime="20231009 12:29:12.896"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20231009 12:29:12.896" endtime="20231009 12:29:12.896"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Hoodies &amp; Sweatshirts - Tops - Men</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20231009 12:29:12.896" endtime="20231009 12:29:12.896"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>sorter</arg>
+<arg>Product Name</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20231009 12:29:12.896" endtime="20231009 12:29:12.896"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${t}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231009 12:29:12.902" endtime="20231009 12:29:12.902"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>sorter</arg>
+<arg>price</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20231009 12:29:12.902" endtime="20231009 12:29:12.902"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${t}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231009 12:29:12.902" endtime="20231009 12:29:12.902"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>sorter</arg>
+<arg>0</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20231009 12:29:12.902" endtime="20231009 12:29:12.902"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${t}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231009 12:29:12.904" endtime="20231009 12:29:12.904"/>
+</kw>
+<doc>Demo Selectores</doc>
+<tag>test_uno</tag>
+<status status="FAIL" starttime="20231009 12:29:09.179" endtime="20231009 12:29:12.904">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 117.0.5938.132 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00CCA813+48355]
+	(No symbol) [0x00C5C4B1]
+	(No symbol) [0x00B65358]
+	(No symbol) [0x00B861AC]
+	(No symbol) [0x00B81EF3]
+	(No symbol) [0x00B80579]
+	(No symbol) [0x00BB0C55]
+	(No symbol) [0x00BB093C]
+	(No symbol) [0x00BAA536]
+	(No symbol) [0x00B882DC]
+	(No symbol) [0x00B893DD]
+	GetHandleVerifier [0x00F2AABD+2539405]
+	GetHandleVerifier [0x00F6A78F+2800735]
+	GetHandleVerifier [0x00F6456C+2775612]
+	GetHandleVerifier [0x00D551E0+616112]
+	(No symbol) [0x00C65F8C]
+	(No symbol) [0x00C62328]
+	(No symbol) [0x00C6240B]
+	(No symbol) [0x00C54FF7]
+	BaseThreadInitThunk [0x7557FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77077B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77077AEE+238]
+</status>
+</test>
+<doc>Demo de los Select</doc>
+<status status="FAIL" starttime="20231009 12:29:09.012" endtime="20231009 12:29:12.907"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">test_uno</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Select">Select</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
