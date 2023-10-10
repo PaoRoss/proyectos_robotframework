@@ -25,7 +25,12 @@ Demo uno
     Set Selenium Implicit Wait    50
 
 #tiempo para todas nuestras funciones
-    Set Selenium Speed    .5
+    #Set Selenium Speed    .5
+
+    ${speed}=    Get Selenium Speed
+    Log To Console    ${speed}
+    Set Selenium Speed    10
+    
     Select From List By Label    sorter    Product Name 
     Select From List By Value    sorter    price
     Select From List By Index    sorter    0
@@ -33,3 +38,6 @@ Demo uno
 
     ${tiempo}=    Get Selenium Implicit Wait
     Log To Console    ${tiempo}
+
+    ${speed}=    Get Selenium Speed
+    Log To Console    ${speed}
