@@ -2,13 +2,14 @@
 Documentation       Demo de los Select
 Library             SeleniumLibrary
 Resource            ../Data/General_data.robot
+Resource            ../Keyword_repository/General_keywords.robot
 
 *** Test Cases ***
 Demo uno
     [Documentation]    Demo Selectores
     [Tags]    test_uno
-    Open Browser    ${url_ecommerce}    ${navegador}    options=add_experimental_option("detach", True)
-    Maximize Browser Window
+    Open site    ${url_ecommerce}    ${navegador}
+    
     Title Should Be    Hoodies & Sweatshirts - Tops - Men
 
     #label

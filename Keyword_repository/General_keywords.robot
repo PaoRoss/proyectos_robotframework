@@ -3,6 +3,11 @@ Library    SeleniumLibrary
 Resource    ../Data/General_data.robot
 
 *** Keywords ***
+Open site
+    [Arguments]    ${URL}    ${NAV_EXPLORER}
+    Open Browser    ${URL}    ${NAV_EXPLORER}    options=add_experimental_option("detach", True)
+    Maximize Browser Window
+
 Wait for element and click it*
     [Arguments]    ${LOCATOR}    ${MSG_IF_ERROR}
     ${status}    Run Keyword And Return Status    Wait Until Element Is Visible    ${LOCATOR}    ${TIMEOUT}

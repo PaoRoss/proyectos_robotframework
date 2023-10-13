@@ -4,6 +4,7 @@ Documentación    Proyecto de pruebas 2023
 *** Settings ***
 Library     SeleniumLibrary
 Resource    ../Data/General_data.robot
+Resource    ../Keyword_repository/General_keywords.robot
 
 
 
@@ -11,8 +12,8 @@ Resource    ../Data/General_data.robot
  Mi primer Test
      [Documentation]    Primer prueba del sistema
      [Tags]    Test_uno
-     Open Browser    ${url}    ${navegador}
-     Maximize Browser Window
+     Open site    ${url}    ${navegador}
+     
      Wait Until Element Is Visible    //*[@class="body-height"]
 
      Input Text    id=userName    Rodrigo

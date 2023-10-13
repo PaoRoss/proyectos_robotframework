@@ -2,13 +2,13 @@
 Documentation       Practica Dos
 Library             SeleniumLibrary
 Resource            ../Data/General_data.robot
+Resource            ../Keyword_repository/General_keywords.robot
 
 *** Test Cases ***
 Practica Validando Titulo
     [Documentation]    Validando el título de la página
     [Tags]    test_uno
-    Open Browser    ${url}    ${navegador}
-    Maximize Browser Window
+    Open site    ${url}    ${navegador}
     #Validando el título
     Title Should Be    DEMOQA
     Wait Until Element Is Visible    //*[@class="body-height"]

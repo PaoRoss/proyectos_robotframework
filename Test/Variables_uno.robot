@@ -2,6 +2,7 @@
 Documentation    Demo de Variables
 Library    SeleniumLibrary
 Resource            ../Data/General_data.robot
+Resource            ../Keyword_repository/General_keywords.robot
 
 *** Test Cases ***
 Demo uno

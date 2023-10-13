@@ -2,14 +2,14 @@
 Documentation       Demo Radio Buttons
 Library             SeleniumLibrary
 Resource            ../Data/General_data.robot
-
+Resource            ../Keyword_repository/General_keywords.robot
 
 *** Test Cases ***
 Demo uno
     [Documentation]    Demo Radio Button
     [Tags]    test_uno
-    Open Browser    ${url}    ${navegador}    options=add_experimental_option("detach", True)
-    Maximize Browser Window
+    Open site    ${url}    ${navegador}
+
     Title Should Be    DEMOQA
     Sleep    ${t}
 
