@@ -1,11 +1,7 @@
 *** Settings ***
 Documentation       Practica Dos
 Library             SeleniumLibrary
-
-*** Variables ***
-${url}=    https://demoqa.com/text-box/
-${navegador}=    gc
-
+Resource            ../Data/General_data.robot
 
 *** Test Cases ***
 Practica Validando Titulo

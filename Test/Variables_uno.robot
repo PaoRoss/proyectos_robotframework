@@ -1,11 +1,7 @@
 *** Settings ***
 Documentation    Demo de Variables
 Library    SeleniumLibrary
-
-*** Variables ***
-${nombre}    Rodrigo
-${apellidoPaterno}    Villanueva
-${apellidoMaterno}    Nieto
+Resource            ../Data/General_data.robot
 
 *** Test Cases ***
 Demo uno

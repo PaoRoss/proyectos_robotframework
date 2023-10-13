@@ -1,12 +1,7 @@
 *** Settings ***
 Documentation       Demo Radio Buttons
 Library             SeleniumLibrary
-
-*** Variables ***
-${url}=    https://demoqa.com/radio-button
-${url2}=    https://demoqa.com/checkbox
-${navegador}=    gc
-${t}=    2
+Resource            ../Data/General_data.robot
 
 
 *** Test Cases ***

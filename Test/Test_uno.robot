@@ -2,16 +2,16 @@ Documentación    Proyecto de pruebas 2023
 
 
 *** Settings ***
-Library    SeleniumLibrary
+Library     SeleniumLibrary
+Resource    ../Data/General_data.robot
 
-*** Variables ***
 
 
 *** Test Cases ***
  Mi primer Test
      [Documentation]    Primer prueba del sistema
      [Tags]    Test_uno
-     Open Browser    https://demoqa.com/text-box/    gc
+     Open Browser    ${url}    ${navegador}
      Maximize Browser Window
      Wait Until Element Is Visible    //*[@class="body-height"]
 
