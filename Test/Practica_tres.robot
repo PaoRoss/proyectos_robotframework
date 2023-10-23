@@ -28,13 +28,14 @@ Demo uno
 
     Wait Until Element Is Visible    //h1[contains(text(), "Account")]
 
-    Click Link    //a[text()="Continue"]
+    Click Element    //a[text()="Continue"]
 
     Wait Until Element Is Visible    //h2[text()="My Account"]
 
 
 
     Sleep    2
+    Close Browser
 
 
 *** Keywords ***
