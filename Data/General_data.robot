@@ -15,10 +15,12 @@ ${apellidoMaterno}=             Rosano
 # Practica_tres
 ${url5}                         https://opencart.abstracta.us/index.php?route=account/register
 ${title}                        Register Account
-${email}                        qazws@correo.com
+${email}                        pao8@correo.com
 ${phoneNumber}                  1234567890
 ${password}                     Password
 ${passwordConfirmation}         Password
+${emailEmty}                    
+${phoneEmpty}
 
 
 
